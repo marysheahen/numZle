@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html style='background-color:#362B2B;height:100;'>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1.0 user-scalable=no' />
+<script type="text/javascript" charset="utf-8" src="cordova-2.7.0.js"></script>
+<script src='js/jquery.mobile.custom.min.js'></script>
+<script src='js/board.js'></script>
+<link rel='stylesheet' type='text/css' href='css/Home.css' />
+</head>
+<body class='app' id='8+' onload='startup()'>
+<a href='SuperBaby2.html'><img id = 'prev' src = 'img/leftarrow.png' width='40' height='40' style='float:left'></a>
+<img id='state' src = 'img/unlockedsymbol.png' width = '30' height = '30' style='float:left'>
+<a href='SuperBaby3.html'><img id = 'next' src = 'img/rightarrow.png' width = '40' height='40' style='float:right'></a>
+<h1>SuperBaby 3</h1>
+<p>
+
+<b id='flows' style='text-align:left;float:left;font-size:15px;color:white;'>paths: 0/8</b>
+<b id='currentstack' style='text-align:right;float:right;font-size:15px;color:white;'>moves: 0</b>
+<p><b id="eq" style="text-align:center;position:absolute;left:40%;font-size:17px;color:white;">__ + 8 = __</b>
+<b id="eq1" style="text-align:center;position:absolute;left:40%%;font-size:17px;color:white;display:none;">__ + 1 = __</b>
+	<br><b id="eq2" style="text-align:center;position:absolute;left:40%;font-size:17px;color:white;display:none;">__ + 1 = __</b>
+<b id='loadedimg'></b><p>
+<div id='backgroundimg' style='background-image:url(./img/sunflower.png)'>
+<b><img src='img/mousoverright.png' style='display:none'><img src='img/mousoverleft.png' style='display:none'><img src='img/mousovertop.png' style='display:none'><img src='img/mousoverbottom.png' style='display:none'><img src='img/cornerlayerbottomright.png' style='display:none'><img src='img/cornerlayerbottomleft.png' style='display:none'><img src='img/cornerlayertopleft.png' style='display:none'><img src='img/selectup.png' style='display:none'><img src='img/selectright.png'style='display:none'><img src='img/selectleft.png'style='display:none'><img src='img/cornerlayertopright.png' style='display:none'><img src='img/selectdwn.png'style='display:none'><img src='img/straight_vert.png'style='display:none'><img src='img/straight_hor.png' style='display:none'></b>
+<div class='block' id='11'></div>
+<div class='block' id='12'><span>7</span></div>
+<div class='block' id='13'><span>16</span></div>
+<div class='block' id='14'></div>
+<div class='block' id='15'></div>
+<div class='block' id='16'><span>24</span></div>
+<div class='block' id='17'><span>15</span></div>
+<div class='block' id='18'></div>
+<div class='block' id='21'></div>
+<div class='block' id='22'></div>
+<div class='block' id='23'></div>
+<div class='block' id='24'></div>
+<div class='block' id='25'></div>
+<div class='block' id='26'></div>
+<div class='block' id='27'></div>
+<div class='block' id='28'></div>
+<div class='block' id='31'></div>
+<div class='block' id='32'><span>14</span></div>
+<div class='block' id='33'><span>13</span></div>
+<div class='block' id='34'></div>
+<div class='block' id='35'></div>
+<div class='block' id='36'><span>21</span></div>
+<div class='block' id='37'><span>22</span></div>
+<div class='block' id='38'></div>
+<div class='block' id='41'></div>
+<div class='block' id='42'></div>
+<div class='block' id='43'></div>
+<div class='block' id='44'></div>
+<div class='block' id='45'></div>
+<div class='block' id='46'></div>
+<div class='block' id='47'></div>
+<div class='block' id='48'></div>
+<div class='block' id='51'></div>
+<div class='block' id='52'><span>5</span></div>
+<div class='block' id='53'><span>6</span></div>
+<div class='block' id='54'></div>
+<div class='block' id='55'></div>
+<div class='block' id='56'><span>14</span></div>
+<div class='block' id='57'><span>13</span></div>
+<div class='block' id='58'></div>
+<div class='block' id='61'></div>
+<div class='block' id='62'></div>
+<div class='block' id='63'></div>
+<div class='block' id='64'></div>
+<div class='block' id='65'></div>
+<div class='block' id='66'></div>
+<div class='block' id='67'></div>
+<div class='block' id='68'></div>
+<div class='block' id='71'></div>
+<div class='block' id='72'></div>
+<div class='block' id='73'></div>
+<div class='block' id='74'></div>
+<div class='block' id='75'></div>
+<div class='block' id='76'></div>
+<div class='block' id='77'></div>
+<div class='block' id='78'></div>
+<div class='block' id='81'></div>
+<div class='block' id='82'><span>11</span></div>
+<div class='block' id='83'><span>1</span></div>
+<div class='block' id='84'></div>
+<div class='block' id='85'></div>
+<div class='block' id='86'><span>9</span></div>
+<div class='block' id='87'><span>19</span></div>
+<div class='block' id='88'></div>
+</div>
+
+<p><b id='eq1' style='text-align:center;position:absolute;left:40%;bottom:117px;font-size:30px;color:white;visibility:hidden;'>__ + 1 = __</b></p></br>
+<p><b id='eq2' style='text-align:center;position:absolute;left:40%;bottom:98px;font-size:30px;color:white;visibility:hidden;'>__ + 1 = __</b></p></br>
+	<p><img  id='refresh' src = "img/refresh.png" style="position:absolute;bottom:10%;height:17px;width:17px;left:49%">
+</br>
+</body>
+<a href='SuperBabylevels.html' style="text-align:center;position:absolute;left:0%;bottom:8%;font-size:17px;color:white;"><img src = 'img/backarrow.png' height='30' width='30'></a>
+<div class='adspace'>Ad space!</div>
+</html>
